@@ -504,6 +504,7 @@ ol{
     background-color: aliceblue;
     padding: 5px;
     padding-top: 30px;
+    padding-bottom: 56px;
 }
 .blob6 {
     border: 5px;
@@ -541,15 +542,55 @@ ol{
            
         
         @media only screen and (min-width:300px) and (max-width:767px){
+            .card {
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+    padding: 28px;
+    box-shadow: 0px 0px 12px 4px ghostwhite;
+    width: 100%;
+    height: 325;
+}    
+.careers2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+
+
+input#skills {
+    color: grey;
+    opacity: 30%;
+    width:80px;
+}
+input#location {
+    color: grey;
+    opacity: 30%;
+    width: 80px;
+}
+#search {
+    border-radius: 25px;
+    width: 80px;
+    position: relative;
+    font-weight: 300;
+}
             div.s1{
                 display:none
             }
             article{
                 display:grid;
             grid-template-columns: 1fr ;
-            padding-top: 120px;
+            padding-top: 12px;
             padding-bottom: 120px;
             }
+            .space2 {
+    padding-top: 8px;
+}
            
             .header12{
                 
@@ -585,7 +626,9 @@ ol{
   
             border-radius: 50px;
             
-            max-width: 300px;
+            display: flex;
+    width: 100%;
+    align-content: space-between;
             
             box-shadow: 0px 0px 12px 3px ghostwhite;
 
@@ -594,19 +637,22 @@ ol{
         .grid_images{
             display: grid;
             grid-template-columns: 1fr 1fr ;
-            grid-row-gap: 20px;
-            grid-column-gap: 20px;
+            grid-row-gap: 8px;
+            grid-column-gap: 8px;
             background-color: aliceblue;
            padding: 5px;
             padding-top: 30px;
+            padding-bottom: 48px;
            
         }
-        .careers2 {
-            display: grid;
-            grid-template-columns: 1fr;
-            padding-left: 32px;
-            padding-right: 5px;
-         }  
+ 
+        .image1 {
+    display: flex;
+    column-gap: 46px;
+}
+    .im{
+        max-width: 290px;
+    }
             .phone_number{
             background-color: aliceblue;
            display: flex;
@@ -660,10 +706,7 @@ ol{
         div.blob10{
             max-width: 350px;
         }
-        .border1{
-            display: block;
-            width: 100%;
-        }
+        
         #imageman{
             display: none;
         }
@@ -687,7 +730,12 @@ input#name.s1 {
     border-top-left-radius: 20px;
     width:100%
 }
-    }
+.smallimage {
+    position: relative;
+    left: 0%;
+}
+        }
+    
    
         </style>
     </head>
