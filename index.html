@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" >
         
         <style>
@@ -384,7 +384,8 @@ input#call{
  
 ol{
     list-style-type:disc;
-}        @media  only screen and (min-width:768px) {
+}  
+@media  only screen and (min-width:950px) {
             .phone123{
                 display: none;
             }
@@ -431,18 +432,127 @@ ol{
          }
            
         }
+
+@media  only screen and (min-width:768px) and (max-width:950px) {
+            .phone123{
+                display: none;
+            }
+            .header12{
+    padding-left: 40px;
+    padding-right: 40px;
+}          .grid_images{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            background-color: aliceblue;
+           padding: 40px;
+            padding-top: 30px;
+            padding-bottom: 56px;
+            
+          }
+          .pad{
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+          .blob1{
+            padding-left: 40px;
+          }
+          .blob2{
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+          .padding{
+            padding-left: 40px;
+          }
+          .image2{
+            padding-right: 40px;
+          }
+          .careers{
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+         .im{
+            border-radius: 4px;
+            
+            
+            
+         }
+         #imageman{
+                display:none;
+            }
+            .header12 {
+    display: block;
+    
+    padding-bottom: 30px;
+    padding-top: 44px;
+        }
+        .careers2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-wrap: unset; */
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.grid_images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    background-color: aliceblue;
+    padding: 5px;
+    padding-top: 30px;
+}
+.blob6 {
+    border: 5px;
+    background-color: #D9D2FB;
+    border-radius: 67% 33% 85% 15% / 67% 57% 43% 33%;
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    top: 67%;
+    right: 15%;
+}
+.blob4{
+    border: 5px;
+    background-color: #FFC2D1;
+    border-radius: 70% 30% 23% 77% / 66% 58% 42% 34%;
+    width: 192px;
+    height: 192px;
+    position: relative;
+    transition: border-radius 500ms ease-in-out;
+    top: 0%;
+    left: 2%;
+    opacity: 70%;
+}
+.blob6{
+    border: 5px;
+    background-color: #D9D2FB;
+    border-radius: 67% 33% 85% 15% / 67% 57% 43% 33%;
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    top: 66%;
+    right: 4%;
+}
+}
+           
+        
         @media only screen and (min-width:300px) and (max-width:767px){
+            div.s1{
+                display:none
+            }
             article{
                 display:grid;
             grid-template-columns: 1fr ;
             padding-top: 120px;
             padding-bottom: 120px;
             }
-            .s1{
-                display: none;
-            }
+           
             .header12{
-                display:none;
+                
                 display: grid;
                 grid-template-columns: 1fr;
             }
@@ -486,16 +596,19 @@ ol{
             grid-template-columns: 1fr 1fr ;
             grid-row-gap: 20px;
             grid-column-gap: 20px;
-            background-color: lightblue;
+            background-color: aliceblue;
            padding: 5px;
             padding-top: 30px;
            
         }
         .careers2 {
             display: grid;
-            grid-template-columns: 1fr }  
+            grid-template-columns: 1fr;
+            padding-left: 32px;
+            padding-right: 5px;
+         }  
             .phone_number{
-            background-color: aquamarine;
+            background-color: aliceblue;
            display: flex;
            flex-direction: column;
         }
@@ -563,6 +676,16 @@ ol{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     width: 100%;
+}
+input#name.s1 {
+    padding: 12px;
+    background-color: white;
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width:100%
 }
     }
    
