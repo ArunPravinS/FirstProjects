@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" >
         
         <style>
@@ -51,19 +52,35 @@
             justify-content: space-between;
         }
         .border1{
-            
-  padding-top: 10px;
-  padding-bottom: 10px;
+            display: flex;
+            justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-shadow: 0px 0px 12px 3px ghostwhite;
   
   
-  border-radius: 25px;
+  border-radius: 50px;
   
-  max-width: 550px;
+ 
+  position: relative;
+  top: -159px;
 z-index: 2;
         }
         #search{
             border-radius: 25px;
+            width: 120px;
+    position: relative;
+    
+    font-weight: 300;
+    
+        }
+        input#location{
+            color: grey;
+            opacity:30%
+        }
+        input#skills{
+            color: grey;
+            opacity: 30%;
         }
         h1{
             font-family: poppins;
@@ -360,6 +377,8 @@ input#call{
         }
         .blob7{
             max-width: 600px;
+            position:relative;
+            top: 34px;
         }
             
  
@@ -445,9 +464,10 @@ ol{
             padding-top: 10px;
             padding-bottom: 10px;
             padding-left: 6px;
+
   
   
-            border-radius: 25px;
+            border-radius: 50px;
             
             max-width: 300px;
             
@@ -480,6 +500,8 @@ ol{
     </head>
     <header>
         <div >
+            <i style="color: green;" class="fa-solid fa-gift fa-lg"width=43px height="43px"></i>
+
             <b style="color:orange;font-size: 30px;font-family: poppins;">cooljob</b>
         </div>
         <div class = s1 style="font-family: poppins;">
@@ -504,6 +526,7 @@ ol{
         </ul>
     </section></div>
     <body>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <main>
                
         <div class="header12">
@@ -514,8 +537,15 @@ ol{
             <p style="font-family: poppins;font-weight: 500;z-index: 2;max-width: 300px;">We will help you in your search for a dream job so that your life will be happy</p>
             </div><div class="blob10"style="z-index: -1;box-shadow: 0px 0px 6px 6px #f8f8ff5e;"></div>
             <div class="border1">
+                <div>
+                    <i class="fa fa-search" aria-hidden="true" style="color: grey;opacity: 30%;"></i>
                 <input type="text" id="skills" placeholder="skills" style="border: none;">
-                <input type="text" id="location" placeholder="location" style="border: none;">&nbsp;
+                </div>
+                <div>
+                    <i class="fas fa-location"style="color: grey;opacity: 30%;"></i>
+                <input type="text" id="location" placeholder="location" style="border: none;">
+                </div>
+                &nbsp;
                 <input type="button" id="search" name="search" value="search"maxlength="6" size="5"style="background-color: orange;">
                 
             </div>
