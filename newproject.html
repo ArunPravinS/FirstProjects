@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" >
+        
+        <style>
+            *{
+                box-sizing: border-box;
+                font-weight: 600;
+                font-family: poppins;
+                
+            }
+            div{
+                font-family: poppins;
+                font-weight: 600;
+            }
+
+            
+            a{
+                font-family: poppins;
+                font-weight: 600;
+            }
+          
+            header{
+                border:5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 40px;
+                padding-left: 40px;
+               
+                padding-bottom: 30px;
+                
+            }
+            .phone_flex{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            gap:4px
+        }
+            p{
+            font-family: poppins;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .header123{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .border1{
+            
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 12px 3px ghostwhite;
+  
+  
+  border-radius: 25px;
+  
+  max-width: 550px;
+z-index: 2;
+        }
+        #search{
+            border-radius: 25px;
+        }
+        h1{
+            font-family: poppins;
+        }
+        .header12{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 30px;
+            padding-top: 44px;
+        }
+        .mm{
+            background-color: aliceblue;
+           
+            
+          }
+          .grid_images{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            background-color: aliceblue;
+           padding: 5px;
+            padding-top: 30px;
+            
+          }
+          .grid_images>.w {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            border-radius: 25px;
+            max-width: 250px;
+        
+        }
+        #imageman{
+            align-items: right;
+        }
+        .man{
+            align-items: right;
+        }
+        article{
+            display:grid;
+            grid-template-columns: 1fr 1.5fr;
+            padding-top: 120px;
+            padding-bottom: 120px;
+            
+        }
+        .phone_number{
+            background-color: aliceblue;
+           display: grid;
+           grid-template-columns: 1.5fr 1fr;
+        }
+        .padding{
+            
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        input#name.s1{
+             padding: 12px ;
+        
+ 
+  
+  
+         background-color: white;
+         border: none;
+         
+
+         
+         border-bottom-right-radius: 20px;
+         border-bottom-left-radius: 20px;
+         border-top-right-radius: 20px;
+         border-top-left-radius: 20px;
+         padding-right: 200px;
+
+        }
+        input[type=text] {
+  
+        padding: 12px ;
+        
+ 
+  
+  
+         background-color: white;
+         border: none;
+         
+
+         
+         border-bottom-right-radius: 20px;
+         border-bottom-left-radius: 20px;
+         border-top-right-radius: 20px;
+         border-top-left-radius: 20px;
+}
+input[type=tel] {
+  
+  padding: 12px ;
+
+
+
+   background-color: white;
+   border: none;
+   
+
+   
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   padding-right: 200px;
+   
+}
+
+input[type=button] {
+  
+  padding: 12px 20px;
+
+
+
+   background-color: white;
+   border: none;
+   
+
+   
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+}
+#call{
+    background-color: orange;
+    padding-left: 25px;
+}
+.image2{
+    padding-top: 25px;
+    
+}
+.careers1{
+    display: flex;
+    justify-content: space-between;
+}
+.image1 {
+            display: flex;
+            column-gap: 50px;
+
+        }
+
+        .card {
+
+           border:none;
+            background-color: white;
+            border-radius: 25px;
+            padding: 28px;
+            box-shadow: 0px 0px 12px 4px ghostwhite;
+           width:325px;
+           height: 325;
+           
+            
+            
+
+
+
+        }
+
+        .careers2 {
+            display: flex;
+            flex-wrap: wrap;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .smallimage{
+            position: relative;
+            left: 10%;
+        }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.im{
+            border-radius: 4px;
+         }
+         .abc{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+         }
+input#call{
+    padding-right: 32px;
+    padding-left: 24px;
+}
+.blob3{
+            border: 5px;
+            background-color: #D7F2FB;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+            width: 192px;
+            height: 192px;
+            position: relative;
+            transition: border-radius 500ms ease-in-out;
+            top: -45px;
+    left: 20%;
+    
+        }
+        div.blob10{
+            border: 5px;
+            background-color: #D7F2FB;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+            width: 440px;
+            height: 300px;
+            position: relative;
+            transition: border-radius 500ms ease-in-out;
+            top: -220px;
+            left: 0%;
+            z-index: -1;
+    
+        }
+        .blob4{
+            border: 5px;
+            background-color: #FFC2D1;
+            border-radius: 70% 30% 23% 77% / 66% 58% 42% 34% ;
+            width: 192px;
+            height: 192px;
+            position: relative;
+            transition: border-radius 500ms ease-in-out;
+            top: 0%;
+    left: -11%;
+    opacity: 70%;
+        }
+        .blob5{
+            border: 5px;
+            background-color: #FCE6CC;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+            width: 192px;
+            height: 192px;
+            transition: border-radius 500ms ease-in-out;
+            position: relative;
+            top: 0%;
+            left:10%;
+           
+            
+        }
+        .blob5:hover{
+            border-radius: 70% 30% 23% 77% / 66% 58% 42% 34% ;
+
+        }
+        .blob3:hover{
+            border-radius: 70% 30% 23% 77% / 66% 58% 42% 34% ;
+
+        }
+        .blob4:hover{
+            border-radius: 20% 60% 89% 23% / 16% 98% 22% 84% ;
+
+        }
+        .blob6:hover{
+            border-radius: 70% 30% 23% 77% / 66% 58% 42% 34% ;
+
+        }
+        .blob6{
+            border: 5px;
+            background-color:#D9D2FB;
+            border-radius: 67% 33% 85% 15% / 67% 57% 43% 33%  ;
+            width: 192px;
+            height: 192px;
+            position:absolute;
+            top: 67%;
+            right:22%
+        }
+        .blob9{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            position: relative;
+        }
+        .space1{
+            padding-top: 50px;
+        }
+        .space2{
+            padding-top: 50px;
+        }
+        .blob7{
+            max-width: 600px;
+        }
+            
+ 
+ol{
+    list-style-type:disc;
+}        @media  only screen and (min-width:768px) {
+            .phone123{
+                display: none;
+            }
+            .header12{
+    padding-left: 40px;
+    padding-right: 40px;
+}          .grid_images{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            background-color: aliceblue;
+           padding: 40px;
+            padding-top: 30px;
+            padding-bottom: 56px;
+            
+          }
+          .pad{
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+          .blob1{
+            padding-left: 40px;
+          }
+          .blob2{
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+          .padding{
+            padding-left: 40px;
+          }
+          .image2{
+            padding-right: 40px;
+          }
+          .careers{
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+         .im{
+            border-radius: 4px;
+            
+            
+            
+         }
+           
+        }
+        @media only screen and (min-width:300px) and (max-width:767px){
+            .s1{
+                display: none;
+            }
+            .header12{
+                display:none;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            #imageman{
+                max-width: 300px;
+                padding-top: 10px;
+                
+            }
+            main{
+                padding: 5px;
+            }
+            header{
+                padding: 5px;
+            }
+            ul{
+              list-style-type:none;
+              padding: 0;
+              }
+            div{
+                font-family: poppins;
+            }
+            .border1{
+                
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 6px;
+  
+  
+            border-radius: 25px;
+            
+            max-width: 300px;
+            
+            box-shadow: 0px 0px 12px 3px ghostwhite;
+
+
+        }
+        .grid_images{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            background-color: lightblue;
+           padding: 5px;
+            padding-top: 30px;
+           
+        }
+        .careers2 {
+            display: grid;
+            grid-template-columns: 1fr }  
+            .phone_number{
+            background-color: aquamarine;
+           display: flex;
+           flex-direction: column;
+        }
+       
+    }
+   
+        </style>
+    </head>
+    <header>
+        <div >
+            <b style="color:orange;font-size: 30px;font-family: poppins;">cooljob</b>
+        </div>
+        <div class = s1 style="font-family: poppins;">
+            <p><a style="color: black;text-decoration: none;font-family: poppins;font-weight: 600;" href="#"> Categories</a> &nbsp; &nbsp;  &nbsp;<a style="color: black;text-decoration: none;font-family: poppins;font-weight: 600;" href="#"> New vacancies</a>  &nbsp;  &nbsp; &nbsp;<a style="color: black;text-decoration: none;font-family: poppins;font-weight: 600;"href="#">Job search</a></p>
+        </div>
+        <div class="phone_flex">
+            <i class="fa fa-phone" style="color: orange;"></i>
+           <p style="color: orange;"><a style="color: orange;text-decoration: none;font-family: poppins;" href="#"> Order a call</a></p>
+        </div>
+    </header><div>
+    <section class="phone123">
+        <ul>
+            <li>
+                <a style="color: black;text-decoration: none;" href="#"> Categories</a>
+            </li>
+            <li>
+                <a style="color: black;text-decoration: none;" href="#"> New vacancies</a>
+            </li>
+            <li>
+                <a style="color: black;text-decoration: none;" href="#"> Job search</a>
+            </li>
+        </ul>
+    </section></div>
+    <body>
+    <main>
+               
+        <div class="header12">
+         <div class="header123">
+            <div class="blob7">
+                
+            <h1 style="z-index: 2;">One click and work in your pocket and you can work anywhere</h1>
+            <p style="font-family: poppins;font-weight: 500;z-index: 2;max-width: 300px;">We will help you in your search for a dream job so that your life will be happy</p>
+            </div><div class="blob10"style="z-index: -1;box-shadow: 0px 0px 6px 6px #f8f8ff5e;"></div>
+            <div class="border1">
+                <input type="text" id="skills" placeholder="skills" style="border: none;">
+                <input type="text" id="location" placeholder="location" style="border: none;">&nbsp;
+                <input type="button" id="search" name="search" value="search"maxlength="6" size="5"style="background-color: orange;">
+                
+            </div>
+         </div>
+            
+        <div class="man" style="align-items: right;">
+                <img style="border-radius:4px"src="4867780.jpg" id="imageman"height=500px width="500px">
+        </div>
+        
+        </div>
+        <div class="mm">  <br><br>
+            <h1 style="font-family:poppins"class="pad">Work by category</h1>    
+             
+          <div class="grid_images">
+              
+              <div class="w">
+                  <div style="text-align: center;">
+                  <img class="finance_image" height="100px" width="100px"src= "37658.jpg">
+                  <br>
+                  <p ><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Finance</a></p></div>
+              </div>
+              <div class="w">
+                  <div style="text-align:center">
+                  <img class="management_image" height="100px" width="100px" src="269143-P5KU6U-596.jpg">
+                  <br>
+                  <p><a style="color:black;text-decoration: none;font-weight: 600; font-family: poppins;" href="#">Management</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align: center;">
+                      <img class="Design_image" height="100px" width="100px" src="Tiny graphic designer drawing with big pen on computer screen.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Design</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align: center;">
+                      <img class="Medicine_image" height="100px"width="100px"src="43339.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Medicine</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align: center;">
+                      <img class="Restaurants_image" height="100px" width="100px"src="torapril2.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Restaurants</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align:center">
+                      <img class="Message_image" height="100px" width="100px" src="01-150ppp-01.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Message</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align: center;">
+                      <img class="Multimedia_image" height="100px"width="100px" src="torapril2.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Multimedia</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align: center;">
+                      <img class="Cargo transportation_image" height="100px"width="100px"src="18157396.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Cargo transportation</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align: center;">
+                      <img class="Sales_image" height="100px"width="100px" src="group-business-people-economic-recovery.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">Sales</a></p>
+                  </div>
+              </div>
+              <div class="w">
+                  <div style="text-align: center;">
+                      <img class="All categories_image" height="100px" width="100px" src="37658.jpg">
+                      <br>
+                      <p><a style="color:black;text-decoration: none;font-weight: 600;font-family: poppins" href="#">All categories</a></p>
+                  </div>
+              </div>
+          </div>
+          
+
+              
+          </div>
+          <article style="background-color: white;">
+
+            <div class="blob1" >
+                <div>
+                    <h2 class="space1">Why us?</h2>
+                    <p class="space2" style="line-height: 1.6;font-family: poppins;font-weight: 500;">Now the main place of the job search is the internet.Our portal will help you spend less time on this.There are huge number of online vacancies, as well as more familiar offline ones.Sitting at home on a computer or in a cozy cafe with a cup of coffee, you can find a job suitable for you</p>
+                </div>
+            </div>
+            <div class="blob2" style="padding-top: 50px;;">
+                <div class="blob9">
+                  <div class="blob3">
+                    <br><br><p style="font-family: poppins; z-index: 2;color: white;text-align: center;font-size: 18px;font-weight: 800;" >No need to stand in queues</p>
+
+                  </div>
+                  <div class="blob4">
+                    <br><br><p style="font-family: poppins; z-index: 2;color: white;text-align: center;font-size: 18px;font-weight: 800;" >Huge selection of vacancies</p>
+
+                  </div>
+                  <div class="blob5">
+                    <br><br><p style="font-family: poppins; z-index: 2;color: white;text-align: center;font-size: 18px;font-weight: 800;" >convenient search</p>
+
+                  </div>
+                  <div class="blob6">
+                    <br><br><p style="font-family: poppins; z-index: 2;color: white;text-align: center;font-size: 18px;font-weight: 800;" >no need to prepare documents</p>
+
+                  </div>
+            </div>
+            </div>
+            
+            </article>   
+            <div class="phone_number">
+                <div class="padding">
+                    <b style="font-family: poppins;font-size: 36px;">Fill out the form</b><br>
+                    <b style="font-family: poppins;font-size: 36px;">and we will call you back</b><br>&nbsp;<br><br>
+                    <input type="text" class="s1" id="name" placeholder="Your name"><br><br>
+                    <input type="tel"  id="Phone number" placeholder="Phone number:"><br><br>
+                    <input type="checkbox" id="concent1" name="concent1">
+                    <label for="concent1" style="font-family: poppins;font-weight: 200;color:darkgray;font-size: 12px;"> I give my consent to the processing of personal data</label><br><br>
+                    <input type="button" id="call" style="color: white;" name="call" value="call me"maxlength="4" size="4">
+                    
+
+                </div>
+                <div class="image2" >
+                    <span style="text-align: right;">
+                    <img class="im" width="340px" height="340px"src="2752392-removebg-preview.jpg">
+
+                    </span>
+                </div>
+
+            </div>
+            <div style="padding-top: 30px;padding-bottom: 30px;" class="careers">
+                <div class="careers1">
+                    <a style="text-decoration: none;"href=#><b>New vacancies</b></a><a style="text-align: right;text-decoration: none;color: darkred; "href=#>More vacancies</a>
+                </div><br><br>
+                <div class="careers2">
+                    <div class="card">
+                        <div style="font-weight: 200;color: slategrey;">
+                            Finance
+                        </div><br>
+                        <div>
+                            <b style="font-weight: 500;">Financial Management Manager in the company</b>
+                        </div><br><br>
+                        <div class="image1">
+                            <div style="font-weight: 200;color: slategrey;"><div class="abc"><div>
+                                <i class="fa fa-apple" style="font-size:24px;color: grey;"></i>&nbsp;&nbsp;3 days ago
+                                </div><div>
+                                <i class="fa fa-map-marker" style="font-size:24px;color: orange;"></i>&nbsp;&nbsp;&nbsp;london</div></div>
+                            </div>
+                            <div class="smallimage">
+                                <img width="75px" height="75px"
+                                    src="37658.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div style="font-weight: 200;color: slategrey;">
+                            Support Service
+                        </div><br>
+                        <div>
+                            <b style="font-weight: 500;">WhatsApp Call Center Operator</b>
+                        </div><br><br><br>
+                        <div class="image1">
+                            <div style="font-weight: 200;color: slategrey;"><div class="abc"><div>
+                                <i class='fa fa-whatsapp' style='font-size:24px;color: green;'></i>&nbsp;&nbsp;3 days ago
+                                </div><div>
+                                <i class="fa fa-map-marker" style="font-size:24px;color: orange;"></i>&nbsp;&nbsp;&nbsp;london</div></div>
+                            </div>
+                            <div class="smallimage">
+                                <img width="75px" height="75px"
+                                    src="01-150ppp-01.jpg">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div style="font-weight: 200;color: slategrey;">
+                            sales
+                        </div><br>
+                        <div>
+                            <b style="font-weight: 500;">Sales Specalist</b>
+                        </div><br><br><br>
+                        <div class="image1">
+                            <div style="font-weight: 200;color: slategrey;"><div class="abc"><div>
+                                <i class="fa fa-apple" style="font-size:24px;color: grey;"></i>&nbsp;&nbsp;3 days ago
+                                </div><div>
+                                <i class="fa fa-map-marker" style="font-size:24px;color: orange;"></i>&nbsp;&nbsp;&nbsp;Russia</div></div>
+                            </div>
+                            <div class="smallimage">
+                                <img width="75px" height="75px"
+                                    src="group-business-people-economic-recovery.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div style="font-weight: 200;color: slategrey;">
+                            Restaurant business
+                        </div><br>
+                        <div>
+                            <b style="font-weight: 500;">Administrator in a new restaurant</b>
+                        </div><br><br><br>
+                        <div class="image1">
+                            <div style="font-weight: 200;color: slategrey;"><div class="abc"><div>
+                                <i class="fa fa-apple" style="font-size:24px;color: grey;"></i>&nbsp;&nbsp;3 days ago</div>
+                                <div>
+                                <i class="fa fa-map-marker" style="font-size:24px;color: orange;"></i>&nbsp;&nbsp;&nbsp;london</div></div>
+                            </div>
+                            <div class="smallimage">
+                                <img width="75px" height="75px"
+                                    src="torapril2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div style="font-weight: 200;color: slategrey;">
+                            Cargo transportation
+                        </div><br>
+                        <div>
+                            <b style="font-weight: 500;">Long -distance driver</b>
+                        </div><br><br><br>
+                        <div class="image1">
+                            <div style="font-weight: 200;color: slategrey;"><div class="abc"><div>
+                                <i class="fa fa-apple" style="font-size:24px;color: grey;"></i>&nbsp;&nbsp;3 days ago
+                                </div><div>
+                                <i class="fa fa-map-marker" style="font-size:24px;color: orange;"></i>&nbsp;&nbsp;&nbsp;london</div></div>
+                            </div>
+                            <div class="smallimage">
+                                <img width="75px" height="75px"
+                                    src="18157396.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div style="font-weight: 200;color: slategrey;">
+                            Design
+                        </div><br>
+                        <div style="font-weight: 400;">
+                            <b style="font-weight: 500;">Interior designer in a brand store</b>
+                        </div><br><br><br>
+                        <div class="image1">
+                            <div style="font-weight: 200;color: slategrey;" ><div class="abc"><div>
+                                <i class="fa fa-apple" style="font-size:24px;color: grey;"></i>&nbsp;&nbsp;3 days ago
+                                </div><div>
+                                <i class="fa fa-map-marker" style="font-size:24px;color: orange;"></i>&nbsp;&nbsp;&nbsp;london</div></div>
+                            </div>
+                            <div class="smallimage">
+                                <img width="75px" height="75px"
+                                    src="Tiny graphic designer drawing with big pen on computer screen.jpg">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            </main>
+            <footer>
+                <div>
+                    <b style="color:orange;font-size: 20px;">Cooljob</b>
+                </div>
+                <div>
+                    <a style="text-decoration: none;color: white;"href=#><b>All categories</b></a><br><br>
+                    <a style="text-decoration: none;color: white;"href=#><b>New vacancies</b></a>
+
+                </div>
+                <div>
+                    <a style="text-decoration: none;color: white;"href=#><b>Job search</b></a><br><br>
+                    <a style="text-decoration: none;color: white;"href=#><b>Search by location</b></a>
+
+                </div>
+                <div>
+                    
+                    <p style="color:darkred;font-size: 10px;">We are in social networks:</p>
+                    <a href="#" class="fa fa-facebook"></a>&nbsp;
+                    <a href="#" class="fa fa-twitter"></a>&nbsp;
+                    <a href="#" class="fa fa-google"></a>&nbsp;
+                </div>
+            </footer>
+        </body>
+
+        
+          
+    </main>
+  </html> 
