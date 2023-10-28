@@ -11,6 +11,8 @@
                 box-sizing: border-box;
                 font-weight: 600;
                 font-family: poppins;
+                margin: 0;
+                padding:0;
                 
             }
             div{
@@ -248,8 +250,7 @@ input[type=button] {
             flex-wrap: wrap;
             grid-row-gap: 20px;
             grid-column-gap: 20px;
-            padding-left: 50px;
-            padding-right: 50px;
+            
         }
         .smallimage{
             position: relative;
@@ -430,6 +431,9 @@ ol{
             
             
          }
+         .dropdown{
+            display: none;
+        }
            
         }
 
@@ -465,9 +469,7 @@ ol{
           .padding{
             padding-left: 40px;
           }
-          .image2{
-            padding-right: 40px;
-          }
+        
           .careers{
             padding-left: 40px;
             padding-right: 40px;
@@ -493,8 +495,7 @@ ol{
     /* flex-wrap: unset; */
     grid-row-gap: 20px;
     grid-column-gap: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+   
 }
 .grid_images {
     display: grid;
@@ -502,7 +503,7 @@ ol{
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     background-color: aliceblue;
-    padding: 5px;
+    
     padding-top: 30px;
     padding-bottom: 56px;
 }
@@ -538,10 +539,65 @@ ol{
     top: 66%;
     right: 4%;
 }
+.dropdown{
+            display: none;
+        }
 }
            
         
         @media only screen and (min-width:300px) and (max-width:767px){
+            .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #2980b9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+     padding-right: 10px; 
+     text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+
             .card {
     border: none;
     background-color: white;
@@ -602,11 +658,37 @@ input#location {
                 padding-top: 10px;
                 
             }
-            main{
+            .phone123{
+                display: none;
+            }
+            div.header123{
                 padding: 5px;
             }
             header{
                 padding: 5px;
+                position: sticky;
+    top: 0;
+    background-color: white; 
+    color: orange; 
+    padding: 5px; 
+    z-index: 100;
+            }
+            h1.pad{
+                padding: 10px;
+            }
+            h2.space1{
+                padding: 5px;
+            }
+            p.space2{
+                padding: 5px;
+            }
+            div.padding{
+                padding-left: 5px;
+                padding-right:5px;
+            }
+            div.careers{
+                padding-left:5px;
+                padding-right: 5px;
             }
             ul{
               list-style-type:none;
@@ -750,13 +832,35 @@ input#name.s1 {
 }
         
     }
+    @media only screen and (min-width:1024px) and (max-width:1140px){
+        input#skills{
+            width: 120px;
+        }
+        input#location{
+            width:120px;
+        }
+        input#search{
+            width: 100px;
+        }
+        .dropdown{
+            display: none;
+        }
+    }
     
    
         </style>
     </head>
     <header>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-bars"style="font-size:24px;color:orange"></i></i></button>
+            <div class="dropdown-content">
+                <a href="#">Categories</a>
+                <a href="#">New vacancies</a>
+                <a href="#">Job search</a>
+            </div>
+        </div>
         <div >
-            <i style="color: green;" class="fa-solid fa-gift fa-lg"width=43px height="43px"></i>
+            <i class="fa fa-bitcoin" style="font-size:30px;color:orange"></i>
 
             <b style="color:orange;font-size: 30px;font-family: poppins;">cooljob</b>
         </div>
